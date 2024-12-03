@@ -53,8 +53,8 @@ System::Void enrollStudentForm::ClearBtn_Click(System::Object^ sender, System::E
 
 // Enrollment Logic
 bool enrollStudentForm::EnrollStudent(String^ studentID, String^ courseID, String^ semester) {
-	String^ connectionString = "Data Source=your_server_name;Initial Catalog=your_database_name;Integrated Security=True";
 
+	String^ connectionString = "datasource=localhost;port=3306;username=root;password=;database=ICP2026;";
 	SqlConnection^ connection = gcnew SqlConnection(connectionString);
 
 	try {
