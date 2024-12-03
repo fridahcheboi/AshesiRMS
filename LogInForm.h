@@ -23,8 +23,8 @@ namespace AshesiRMS {
 		MySqlCommand^ sqlCmd = gcnew MySqlCommand();
 		DataTable^ sqlDt = gcnew DataTable();
 		MySqlDataAdapter^ sqlDtA = gcnew MySqlDataAdapter();
-	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::Label^ label4;
+
+
 	private: System::Windows::Forms::Button^ forgotPassword;
 	public:
 		MySqlDataReader^ sqlRd;
@@ -82,8 +82,6 @@ namespace AshesiRMS {
 			this->txtPassword = (gcnew System::Windows::Forms::TextBox());
 			this->login = (gcnew System::Windows::Forms::Button());
 			this->clear = (gcnew System::Windows::Forms::Button());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->forgotPassword = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
@@ -140,7 +138,7 @@ namespace AshesiRMS {
 			this->login->BackColor = System::Drawing::Color::MediumSeaGreen;
 			this->login->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->login->Location = System::Drawing::Point(211, 214);
+			this->login->Location = System::Drawing::Point(211, 190);
 			this->login->Name = L"login";
 			this->login->Size = System::Drawing::Size(128, 63);
 			this->login->TabIndex = 5;
@@ -153,31 +151,13 @@ namespace AshesiRMS {
 			this->clear->BackColor = System::Drawing::Color::Salmon;
 			this->clear->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->clear->Location = System::Drawing::Point(75, 214);
+			this->clear->Location = System::Drawing::Point(75, 190);
 			this->clear->Name = L"clear";
 			this->clear->Size = System::Drawing::Size(130, 63);
 			this->clear->TabIndex = 6;
 			this->clear->Text = L"Clear";
 			this->clear->UseVisualStyleBackColor = false;
 			this->clear->Click += gcnew System::EventHandler(this, &LogInForm::button1_Click);
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(160, 159);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(174, 21);
-			this->comboBox1->TabIndex = 7;
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(84, 162);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(32, 13);
-			this->label4->TabIndex = 8;
-			this->label4->Text = L"Role:";
-			this->label4->Click += gcnew System::EventHandler(this, &LogInForm::label4_Click);
 			// 
 			// forgotPassword
 			// 
@@ -197,8 +177,6 @@ namespace AshesiRMS {
 			this->BackColor = System::Drawing::Color::Thistle;
 			this->ClientSize = System::Drawing::Size(421, 366);
 			this->Controls->Add(this->forgotPassword);
-			this->Controls->Add(this->label4);
-			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->clear);
 			this->Controls->Add(this->login);
 			this->Controls->Add(this->txtPassword);
@@ -214,8 +192,8 @@ namespace AshesiRMS {
 
 		}
 #pragma endregion
-	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	// this is the clear button
 	txtEmail->Text = "";
@@ -292,12 +270,12 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
-
+}
 
 void SendRecoveryEmail(String^ recipientEmail, String^ token) {
     try {
-        SmtpClient^ client = gcnew SmtpClient("smtp.gmail.com", 587);
-        client->Credentials = gcnew System::Net::NetworkCredential("your-email@gmail.com", "your-email-password");
+        SmtpClient^ client = gcnew SmtpClient("smtp.office365.com", 587);
+		client->Credentials = gcnew System::Net::NetworkCredential("your-email@gmail.com", "your-app-password");
         client->EnableSsl = true;
 
         MailMessage^ mail = gcnew MailMessage();

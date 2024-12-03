@@ -1,6 +1,6 @@
 #pragma once
 
-#include "viewProfileForm.h"
+// #include "viewProfileForm.h"
 #include "enrollStudentForm.h"
 #include "viewStudentGradesForm.h"
 
@@ -37,7 +37,7 @@ namespace AshesiRMS {
 		// Event Handlers
 		void InitializeComponent(void);
 		void StudentDashboard_Load(System::Object^ sender, System::EventArgs^ e);
-		void viewProfile_Click(System::Object^ sender, System::EventArgs^ e);
+		// void viewProfile_Click(System::Object^ sender, System::EventArgs^ e);
 		void EnrollBtn_Click(System::Object^ sender, System::EventArgs^ e);
 		void viewGrades_Click(System::Object^ sender, System::EventArgs^ e);
 		void FeesBtn_Click(System::Object^ sender, System::EventArgs^ e);

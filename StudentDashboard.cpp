@@ -54,7 +54,7 @@ namespace AshesiRMS {
 		this->viewProfileBtn->TabIndex = 2;
 		this->viewProfileBtn->Text = L"View profile";
 		this->viewProfileBtn->UseVisualStyleBackColor = true;
-		this->viewProfileBtn->Click += gcnew System::EventHandler(this, &StudentDashboard::viewProfile_Click);
+		//this->viewProfileBtn->Click += gcnew System::EventHandler(this, &StudentDashboard::viewProfile_Click);
 
 		// FeesBtn
 		this->FeesBtn->Location = System::Drawing::Point(12, 238);
@@ -125,13 +125,13 @@ namespace AshesiRMS {
 		// Initial Load logic here
 	}
 
-	void StudentDashboard::viewProfile_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		// View Profile button clicked
-		viewProfileForm^ profileForm = gcnew viewProfileForm();
-		profileForm->MdiParent = this;
-		profileForm->Show();
-	}
+	//void StudentDashboard::viewProfile_Click(System::Object^ sender, System::EventArgs^ e)
+	//{
+	//	// View Profile button clicked
+	//	viewProfileForm^ profileForm = gcnew viewProfileForm();
+	//	profileForm->MdiParent = this;
+	//	profileForm->Show();
+	//}
 
 	void StudentDashboard::EnrollBtn_Click(System::Object^ sender, System::EventArgs^ e)
 	{

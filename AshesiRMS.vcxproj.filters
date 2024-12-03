@@ -21,9 +21,6 @@
     <ClCompile Include="MIDForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PasswordRecoveryForm.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="StudentDashboard.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
@@ -45,9 +42,6 @@
     <ClCompile Include="viewEnrollmentDetails.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="viewProfileForm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LogInForm.h">
@@ -55,9 +49,6 @@
     </ClInclude>
     <ClInclude Include="MIDForm.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PasswordRecoveryForm.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StudentDashboard.h">
       <Filter>Header Files</Filter>
@@ -78,9 +69,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="viewEnrollmentDetails.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="viewProfileForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

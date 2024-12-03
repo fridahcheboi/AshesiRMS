@@ -127,10 +127,8 @@
     <ClCompile Include="FacultyDashboard.cpp" />
     <ClCompile Include="LogInForm.cpp" />
     <ClCompile Include="MIDForm.cpp" />
-    <ClCompile Include="PasswordRecoveryForm.cpp" />
     <ClCompile Include="StudentDashboard.cpp" />
     <ClCompile Include="viewEnrollmentDetails.cpp" />
-    <ClCompile Include="viewProfileForm.cpp" />
     <ClCompile Include="viewStudentGradesForm.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -152,16 +150,10 @@
     <ClInclude Include="MIDForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="PasswordRecoveryForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="StudentDashboard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="viewEnrollmentDetails.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="viewProfileForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="viewStudentGradesForm.h">
@@ -184,17 +176,11 @@
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PasswordRecoveryForm.resx">
-      <DependentUpon>PasswordRecoveryForm.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StudentDashboard.resx">
       <DependentUpon>StudentDashboard.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewEnrollmentDetails.resx">
       <DependentUpon>viewEnrollmentDetails.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="viewProfileForm.resx">
-      <DependentUpon>viewProfileForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewStudentGradesForm.resx">
       <DependentUpon>viewStudentGradesForm.h</DependentUpon>
